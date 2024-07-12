@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*---- RESET ----*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Playfair Display", serif;
+}
+
+/*---- HEADER ----*/
+
+header{
+    background-color: rgba(235, 235, 211, 0.4);
+    margin: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+}
+
+header h1{
+    color: #99582A;
+    font-size: 50px;
+    padding: 30px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    font-size: 25px;
+    display: inline-block;
+    margin: 10px;
+}
+
+header nav ul li a{
+    color: #99582A;
+    text-decoration: none;
+}
+
+/*---- body ----*/
+.secc1 h2{
+    font-size: 80px;
+    color: #3C3744;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.secc1 p{
+    font-size: 32px;
+    margin-top: 50px;
+    color: #1f1202;
+    display: inline-block;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.secc1{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 500px;
+    text-align: center;
+}
+
+hr{
+    height: 5px;
+    background-color: #3C3744;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.destacados{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.destacados div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.destacados div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.destacados div div h3{
+    font-size: 60px;
+    color: #3C3744;
+
+}
+
+.destacados div div p{
+    font-size: 25px;
+    color: #3C3744;
+    padding: 20px;
+}
+
+.destacados div img{
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 600px;
+    width: 400px;
+}
+
+.staff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.empleo{
+    width: 23%;
+    background-color: #1f1202;
+    border-radius: 15px;
+}
+
+.personal{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: #e6e6aa;
+    margin-left: 15px;
+    border-radius: 15px;
+}
+
+
+.personal div{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.personal div img{
+    height: 150px;
+    width: 150px;
+    border: 3px solid rgb(167, 137, 97);
+    border-radius: 100%;
+    margin-top: 20px;
+}
+
+.personal div div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.personal div div h3{
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    margin-bottom: 24px;
+    font-size: 30px;
+    color: #3C3744;
+}
+
+.personal div div p{
+    font-size: 18px;
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+.servicios{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4s, 1fr);
+    grid-template-rows: 100px 400px;
+    grid-template-areas: "h2 h2 h2 h2"
+                        "div div div div";
+    margin-bottom: 30px;
+}
+
+.servicios h2{
+    grid-area: h2;
+    grid-area: "h2";
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #3C3744;
+
+}
+
+.servicios div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: div;
+}
+
+
+.servicios div div{
+    height: 400px;
+    width: 250px;
+    display: inline-block;
+    border: 3px solid #3C3744;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.servicios div div img{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.servicios div div h3{
+    font-size: 25px;
+    color: #3C3744;
+    margin-bottom: 10px;
+}
+
+.servicios div div a{
+    text-decoration: none;
+    background-color: #EBEBD3;
+    color: #99582A;
+    border: #3C3744 solid 1px;
+    border-radius: 6px;
+}
+
+.formulario h2{
+    font-size: 35px;
+    padding: 30px;
+    color: #3C3744;
+}
+
+.formulario form{
+    text-align: center;
+    background-color: #EBEBD3;
+    display: inline-block;
+    border: 2px solid #3C3744;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.ubicacion h2{
+    font-size: 35px;
+    padding: 30px;
+    color: #3C3744;
+}
+
+.ubicacion iframe{
+    width: 90%;
+    height: 400px;
+}
+
+.fixed{
+    position: fixed;
+    right: 50px;
+    bottom: 70px;
+}
+
+.formulario form div{
+    margin: 10px;
+}
+
+.formulario form div label{
+    font-size: 20px;
+    color: #99582A;
+}
+
+/*---- FOOTER ----*/
+
+footer{
+    background-color: #EBEBD3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+}
+footer div ul li img{
+    width: 50px;
+    height: 50px;
+}
+
+footer div h2{
+    color: #99582A;
+    font-size: 50px;
+}
+footer div ul{
+    list-style: none;
+}
+
+footer div ul li{
+    display: inline-block;
+    padding-right: 40px;
+}
+
+header nav ul li a:hover{
+    color: black;
+}
