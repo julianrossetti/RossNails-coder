@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nosotros</title>
@@ -11,29 +13,78 @@
 <body>
     <header>
         <h1>RossNails</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./nosotros.html">Conocenos</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./nosotros.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Gracias por interesarte en nuestra historia!</h2>
-            <img src="../img/img3.jpg" alt="">
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quo voluptate, exercitationem, fugiat
-                    fugit cum deserunt hic, nostrum laudantium asperiores voluptatem. Eligendi a magni commodi ducimus
-                    vero libero impedit harum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quidem
-                    quas id dolorum voluptatibus blanditiis dicta quae, pariatur suscipit a cum similique expedita
-                    molestiae vero illum ipsum quibusdam, mollitia perferendis?Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit. Itaque dolore a maxime vero libero deleniti quasi molestias. Eaque in maiores
-                    tempore fuga, facilis ipsum aliquid perferendis fugit voluptates corrupti nostrum.</p>
-            </div>
+        <section class="carrusel">
+            <h2>Gracias por interesarte en nosotros!</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/carrusel3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Fundado en 2007</h5>
+                      <p>Desde 2007, hemos sido un referente en el cuidado de uñas, ofreciendo manicuras clásicas que destacan por su elegancia y durabilidad. Nuestro compromiso es brindarte un servicio de calidad en cada visita.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrusel6.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Creatividad en Cada Detalle.</h5>
+                      <p>Descubre el arte en tus uñas con nuestros diseños personalizados. Nuestros expertos artistas de uñas pueden transformar tus ideas en impresionantes obras de arte que te harán destacar.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/carrusel5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bienestar para Tus Manos.</h5>
+                      <p>Más que un simple servicio de manicura, ofrecemos una experiencia de spa para tus manos. Relájate y disfruta de nuestros tratamientos de cuidado intensivo que dejan tus uñas y piel revitalizadas.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div>
+                <h3>A continuación conoce a nuestro staff</h3>
+              </div>
         </section>
         <section class="staff">
             <div class="personal">
@@ -42,29 +93,34 @@
                     <div>
                         <h3>Alejandro Gómez</h3>
                         <p>Alejandro es el corazón y el alma de RossNails. Con una pasión innata por la estética y el
-                            cuidado personal, Alejandro fundó el salón con la visión de ofrecer un servicio excepcional en
+                            cuidado personal, Alejandro fundó el salón con la visión de ofrecer un servicio excepcional
+                            en
                             un ambiente cálido y acogedor. Se encarga de recibir a los clientes con una sonrisa,
-                            asegurándose de que cada visita sea perfecta desde el momento en que entran por la puerta. </p>
-                        </div>
+                            asegurándose de que cada visita sea perfecta desde el momento en que entran por la puerta.
+                        </p>
                     </div>
+                </div>
+                <div>
+                    <img src="../img/manicura1.jpg" alt="foto de manicura 1">
                     <div>
-                        <img src="../img/manicura1.jpg" alt="foto de manicura 1">
-                        <div>
-                            <h3>Mariana López</h3>
-                            <p>Mariana es una experta en manicura con un ojo impecable para el detalle. Su habilidad para crear
-                                diseños únicos y personalizados ha ganado la admiración de muchos clientes. Además de su
-                                destreza técnica, Mariana se destaca por su trato amable y su capacidad para hacer que cada
-                                visita al salón sea una experiencia relajante y agradable</p>
-                            </div>
+                        <h3>Mariana López</h3>
+                        <p>Mariana es una experta en manicura con un ojo impecable para el detalle. Su habilidad para
+                            crear
+                            diseños únicos y personalizados ha ganado la admiración de muchos clientes. Además de su
+                            destreza técnica, Mariana se destaca por su trato amable y su capacidad para hacer que cada
+                            visita al salón sea una experiencia relajante y agradable</p>
+                    </div>
                 </div>
                 <div>
                     <img src="../img/manicura2.jpg" alt="foto de manicura 2">
                     <div>
                         <h3>Valeria Martínez</h3>
-                        <p>Valeria es una talentosa técnica en uñas conocida por su creatividad y pasión por el arte de la
+                        <p>Valeria es una talentosa técnica en uñas conocida por su creatividad y pasión por el arte de
+                            la
                             manicura. Siempre actualizada con las últimas tendencias, Valeria ofrece una amplia gama de
                             estilos, desde los más clásicos hasta los más innovadores. Su dedicación y habilidad para
-                            entender las necesidades de sus clientes la han convertido en una de las favoritas del salón.
+                            entender las necesidades de sus clientes la han convertido en una de las favoritas del
+                            salón.
                         </p>
                     </div>
                 </div>
@@ -72,22 +128,33 @@
                     <img src="../img/manicura3.jpg" alt="foto de manicura 3">
                     <div>
                         <h3>Sofía Ramírez</h3>
-                        <p>Sofía es la más joven del equipo, pero su entusiasmo y talento son incomparables. Especializada
-                            en tratamientos de cuidado y fortalecimiento de uñas, Sofía se asegura de que cada cliente salga
-                            con uñas no solo hermosas, sino también saludables. Su enfoque profesional y su capacidad para
-                            crear un ambiente acogedor hacen que cada sesión de manicura sea una experiencia memorable.</p>
-                        </div>
+                        <p>Sofía es la más joven del equipo, pero su entusiasmo y talento son incomparables.
+                            Especializada
+                            en tratamientos de cuidado y fortalecimiento de uñas, Sofía se asegura de que cada cliente
+                            salga
+                            con uñas no solo hermosas, sino también saludables. Su enfoque profesional y su capacidad
+                            para
+                            crear un ambiente acogedor hacen que cada sesión de manicura sea una experiencia memorable.
+                        </p>
                     </div>
                 </div>
-                <div class="empleo">
-                    
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <h2>RossNails</h2>
             </div>
+            <div class="empleo">
+                <h2>Trabaja con nosotros!</h2>
+                <form action="">
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input type="text" name="apellido" id="apellido" placeholder="apellido">
+                    <input type="email" name="email" id="email" placeholder="email">
+                    <label for="cv">Dejanos tu CV!</label>
+                    <input class="archivo" type="file" name="cv" id="cv">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h2>RossNails</h2>
+        </div>
         <div>
             <ul>
                 <li><a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" alt=""></a></li>
@@ -98,6 +165,9 @@
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

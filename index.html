@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <h1>RossNails</h1>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Conocenos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Conocenos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/servicios.html">Servicios</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
         <section class="secc1">
             <h2>Lleva la elegancia en tus manos</h2>
-            <p>Descubre la combinación perfecta de cuidado, estilo y calidad. En RossNails, transformamos tus uñas en verdaderas obras de arte. ¡Ven y siéntete especial!</p>
+            <p>Descubre la combinación perfecta de cuidado, estilo y calidad. En RossNails, transformamos tus uñas en
+                verdaderas obras de arte. ¡Ven y siéntete especial!</p>
         </section>
         <hr>
         <section class="destacados">
@@ -30,16 +53,44 @@
                 <img src="./img/semis1.jpg" alt="estilo de uñas semipermanentes">
                 <div>
                     <h3>Servicios RossNails</h3>
-                    <p>En RossNails, nos especializamos en ofrecerte la mejor experiencia en cuidado y embellecimiento de tus manos y uñas. Nuestro equipo de profesionales está dedicado a proporcionarte servicios de alta calidad, utilizando los mejores productos del mercado. Desde manicuras clásicas hasta diseños artísticos personalizados, estamos aquí para hacer que tus uñas se vean perfectas en cualquier ocasión. ¡Ven y descubre la diferencia en cada detalle!</p>
+                    <p>En RossNails, nos especializamos en ofrecerte la mejor experiencia en cuidado y embellecimiento
+                        de tus manos y uñas. Nuestro equipo de profesionales está dedicado a proporcionarte servicios de
+                        alta calidad, utilizando los mejores productos del mercado. Desde manicuras clásicas hasta
+                        diseños artísticos personalizados, estamos aquí para hacer que tus uñas se vean perfectas en
+                        cualquier ocasión. ¡Ven y descubre la diferencia en cada detalle!</p>
                 </div>
             </div>
             <div>
                 <div>
                     <h3>Productos RossNails</h3>
-                    <p>No solo te ofrecemos servicios excepcionales, sino también una cuidada selección de productos para el cuidado y embellecimiento de tus uñas. Desde esmaltes de uñas de alta calidad hasta tratamientos nutritivos y accesorios de diseño, cada uno de nuestros productos ha sido seleccionado para garantizar resultados profesionales en la comodidad de tu hogar. Ven y explora nuestra colección para llevar la experiencia de salón a tus manos.</p>
+                    <p>No solo te ofrecemos servicios excepcionales, sino también una cuidada selección de productos
+                        para el cuidado y embellecimiento de tus uñas. Desde esmaltes de uñas de alta calidad hasta
+                        tratamientos nutritivos y accesorios de diseño, cada uno de nuestros productos ha sido
+                        seleccionado para garantizar resultados profesionales en la comodidad de tu hogar. Ven y explora
+                        nuestra colección para llevar la experiencia de salón a tus manos.</p>
                 </div>
                 <img src="./img/esculpidas2.jpg" alt="uñas esculpidas">
             </div>
+        </section>
+        <section class="envio">
+            <div>
+                <img src="./img/desc.png" alt="">
+                <p>10% de descuento en efectivo o transferencia!</p>
+            </div>
+            <div>
+                <img src="./img/envio.png" alt="">
+                <p>Envío gratis a partir de $50.000!</p>
+            </div>
+            <div>
+                <img src="./img/pago.png" alt="">
+                <p>Aceptamos todos los medios de pago!</p>
+            </div>
+        </section>
+        <section class="ubicacion">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5631.478128362447!2d-60.70368870249481!3d-32.937887278617914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1717633746464!5m2!1ses-419!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <footer>
@@ -50,9 +101,14 @@
             <ul>
                 <li><a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook.png" alt=""></a></li>
                 <li><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png" alt=""></a></li>
-                <li class="fixed"><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png" alt=""></a></li>
+                <li class="fixed"><a href="https://www.whatsapp.com/" target="_blank"><img src="./img/whatsapp.png"
+                            alt=""></a></li>
             </ul>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
