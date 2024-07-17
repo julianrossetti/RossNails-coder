@@ -175,6 +175,10 @@ hr{
 
 .carrusel h2{
     font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #3C3744;
 }
 
 .carrusel h3{
@@ -186,15 +190,11 @@ hr{
     color: #3C3744;
 }
 .carousel{
-    width: 900px;
-    height: 500px;
     border-radius: 10px;
     margin-bottom: 40px;
 }
 
 .d-block{
-    height: 500px !important;
-    width: 900px !important;
     border-radius: 10px;
 }
 
@@ -251,7 +251,6 @@ hr{
 }
 
 .empleo form input{
-    width: 250px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -308,6 +307,11 @@ hr{
     font-weight: 400;
 }
 
+.servicios{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
 .servicios h2{
     text-align: center;
     font-size: 50px;
@@ -319,14 +323,12 @@ hr{
 }
 
 .tarjetas{
-    width: 100%;
+    width: 90%;
     display: grid;
-    grid-area: div;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 400px 400px;
     row-gap: 40px;
-    margin-left: 50px;
-    margin-bottom: 40px;
+    margin: auto;
 }
 
 
@@ -338,6 +340,7 @@ hr{
     border-radius: 17px;
     text-align: center;
     background-color: #e6e6aa;
+    margin: auto;
 }
 
 .tarjeta img{
@@ -496,12 +499,36 @@ header nav ul li a:hover{
 
 /*-Responsive-*/
 
+
+@media (max-width: 1206px){
+    .tarjetas{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 400px 400px;
+    }
+}
+
 @media (max-width: 1028px){
     .destacados div div h3{
         font-size: 50px;
     }
     .destacados div div p{
         font-size: 22px;
+    }
+    .nav-item{
+        font-size: 20px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 912px){
+    .tarjetas{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 400px);
+    }
+    .servicios h2{
+        font-size: 40px;
     }
 }
 
@@ -524,9 +551,20 @@ header nav ul li a:hover{
     }
 }
 
+@media (max-width: 560px){
+    .tarjetas{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(8, 400px);
+    }
+    .servicios{
+        text-align: center;
+    }
+}
+
 @media (max-width: 496px){
     header{
         background-color: #EBEBD3;
+        margin: 10px;
     }
     header h1{
         font-size: 35px;
