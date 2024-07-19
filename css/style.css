@@ -166,50 +166,56 @@ hr{
     text-align: center;
 }
 
-.carrusel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.carrusel h2{
+.conocenos h2{
     font-size: 50px;
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color: #3C3744;
-}
-
-.carrusel h3{
     text-align: center;
-    font-size: 50px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
-    font-style: italic;
-    color: #3C3744;
-}
-.carousel{
-    border-radius: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-.d-block{
-    border-radius: 10px;
+.conocenos h3{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 
-.carousel-caption h5{
-    font-size: 45px;
-    color: #321702;
+.nosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.carousel-caption p{
-    font-size: 18px;
-    color: #f9f4f0;
+.nosotros div{
+    text-align: center;
+    margin: 15px;
+}
+
+.nosotros div h3{
+    font-size: 50px;
     font-family: "Kanit", sans-serif;
     font-weight: 600;
+    font-style: italic;
+    color: #99582A;
 }
 
+
+.nosotros div p{
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.linea-vertical{
+    height: 430px;
+    width: 20px;
+    background-color: #3C3744;
+    border-radius: 20px;
+}
 
 .staff{
     display: flex;
@@ -265,6 +271,7 @@ hr{
     background-color: #e6e6aa;
     margin-left: 15px;
     border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -507,6 +514,23 @@ header nav ul li a:hover{
     }
 }
 
+@media (max-width: 1075px){
+    .staff{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotros{
+        flex-direction: column;
+    }
+    .linea-vertical{
+        display: none;
+    }
+    .empleo{
+        width: 70%;
+        margin: 30px;
+    }
+}
+
 @media (max-width: 1028px){
     .destacados div div h3{
         font-size: 50px;
@@ -551,6 +575,18 @@ header nav ul li a:hover{
     }
 }
 
+@media (max-width: 741px){
+    .personal{
+        width: 85%;
+    }
+    .personal div{
+        margin-left: 10px;
+    }
+    .personal div div p{
+        font-size: 16px;
+    }
+}
+
 @media (max-width: 560px){
     .tarjetas{
         grid-template-columns: auto;
@@ -571,6 +607,12 @@ header nav ul li a:hover{
     }
     footer div h2{
         font-size: 35px;
+    }
+}
+
+@media (max-width: 462px){
+    .personal div{
+        flex-direction: column;
     }
 }
 
@@ -606,5 +648,8 @@ header nav ul li a:hover{
 @media (max-width: 380px){
     header h1{
         font-size: 25px;
+    }
+    .empleo{
+        width: 100%;
     }
 }
