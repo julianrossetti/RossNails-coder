@@ -1,0 +1,30 @@
+header{
+    background-color: rgba(235, 235, 211, 0.4);
+    margin: 30px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    align-items: center;
+    h1{
+        color: #99582A;
+        font-size: 50px;
+        padding: 30px;
+    }
+    nav{
+        div{
+            div{
+                div{
+                    ul{
+                        li{
+                            font-size: 25px;
+                            display: inline-block;
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

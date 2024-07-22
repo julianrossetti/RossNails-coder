@@ -31,9 +31,6 @@ header h1{
     padding: 30px;
 }
 
-header nav  div ul{
-    list-style: none;
-}
 
 .navbar {
     background-color:rgba(235, 235, 211, 0.0) !important;
@@ -47,17 +44,16 @@ header nav  div ul{
     color: #99582A !important;
 }
 
+.nav-link:hover{
+    color: rgb(165, 151, 151) !important;
+}
 
-header nav ul li{
+header nav div div ul li{
     font-size: 25px;
     display: inline-block;
     margin: 10px;
 }
 
-header nav ul li a{
-    color: #99582A;
-    text-decoration: none;
-}
 
 /*---- body ----*/
 .secc1 h2{
@@ -368,6 +364,12 @@ hr{
     color: #EBEBD3;
     border-radius: 6px;
     padding: 6px;
+}
+
+.tarjeta a:hover{
+    color: #e6e6aa;
+    background-color: rgb(94, 53, 24);
+    transition: background-color 0,5s;
 }
 
 .contacto{
