@@ -33,11 +33,16 @@ header {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
-  align-items: center; }
+  align-items: center;
+  z-index: 1; }
   header h1 {
-    color: #99582A;
-    font-size: 50px;
     padding: 30px; }
+    header h1 a {
+      text-decoration: none;
+      color: #99582A;
+      font-size: 50px; }
+      header h1 a:hover {
+        color: #3C3744; }
   header nav div div div ul li {
     font-size: 25px !important;
     display: inline-block;
@@ -440,7 +445,7 @@ footer {
   header {
     background-color: #EBEBD3;
     margin: 10px; }
-    header h1 {
+    header h1 a {
       font-size: 35px; }
   footer div h2 {
     font-size: 35px; } }
@@ -463,5 +468,5 @@ footer {
     margin-left: 6px; } }
 
 @media (max-width: 380px) {
-  header h1 {
+  header h1 a {
     font-size: 25px; } }

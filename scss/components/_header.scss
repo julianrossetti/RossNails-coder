@@ -7,10 +7,17 @@ header{
     justify-content: space-between;
     border-radius: 10px;
     align-items: center;
+    z-index: 1;
     h1{
-        color: nth($colores, 2);
-        font-size: 50px;
         padding: 30px;
+        a{
+            text-decoration: none;
+            color: nth($colores, 2);
+            font-size: 50px;
+            &:hover{
+                color: nth($colores, 3);
+            }
+        }
     }
     nav{
         div{
