@@ -1,0 +1,194 @@
+@media (max-width: 1206px){
+    .servicios{
+        .tarjetas{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 400px 400px 400px;
+        }
+    }
+}
+
+@media (max-width: 1075px){
+    main{
+        .staff{
+            flex-direction: column;
+            align-items: center;
+        }
+        .conocenos{
+            .nosotros{
+                flex-direction: column;
+                .linea-vertical{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1028px){
+    .destacados{
+        div{
+            div{
+                h3{
+                    font-size: 50px;
+                }
+                p{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 912px){
+    .servicios{
+        .tarjetas{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 400px);
+            h2{
+                font-size: 40px;
+            }
+        }
+    }
+    .contacto{
+        flex-direction: column;
+        width: 80%;
+        height: auto;
+        div{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 857px){
+    .destacados{
+        div{
+            flex-direction: column;
+            align-items: center;
+            img{
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    .secc1{
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 741px){
+    .staff{
+        .personal{
+            width: 85%;
+            div{
+                margin-left: 10px;
+                div{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .contacto{
+        div{
+            h2{
+                font-size: 60px;
+            }
+            h3{
+                a{
+                    font-size: 27px;
+                }
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 560px){
+    .servicios{
+        text-align: center;
+        .tarjetas{
+            grid-template-columns: auto;
+            grid-template-rows: repeat(8, 400px);
+        }
+    }
+}
+
+@media (max-width: 496px){
+    header{
+        background-color: #EBEBD3;
+        margin: 10px;
+        h1{
+            font-size: 35px;
+        }
+    }
+    footer{
+        div{
+            h2{
+                font-size: 35px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 462px){
+    .staff{
+        .personal{
+            div{
+                flex-direction: column;
+            }
+        }
+    }
+    .contacto{
+        div{
+            h2{
+                font-size: 32px;
+            }
+            h3{
+                a{
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 428px){
+    footer{
+        div{
+            h2{
+                font-size: 35px;
+            }
+            ul{
+                li{
+                    padding: 0;
+                    margin-left: 6px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 380px){
+    header{
+        h1{
+            font-size: 25px;
+        }
+    }
+}

@@ -6,7 +6,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Contacto</title>
 </head>
 
@@ -43,30 +43,33 @@
     </header>
     <main>
         <section class="contacto">
-            <div class="banner">
-                <div>
-                    <h2>Contactanos</h2>
-                    <h3><a href="RossNailsSaloon@gmail.com" target="_blank">RossNailsSaloon@gmail.com</a></h3>
-                    <p>O por cualquiera de nuestras redes, donde responderemos a la brevedad.</p>
-                </div>
+            <div>
+                <h2>Contactanos</h2>
+                <h3><a href="RossNailsSaloon@gmail.com" target="_blank">RossNailsSaloon@gmail.com</a></h3>
+                <p>O por cualquiera de nuestras redes, donde responderemos a la brevedad.</p>
             </div>
-        </section>
-        <section class="contenedorFormulario">
-            <div class="formulario">
-                <h2> O dejanos tus datos y consulta!</h2>
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInputDisabled" placeholder="name@example.com">
-                    <label for="floatingInputDisabled">Email</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextareaDisabled"></textarea>
-                    <label for="floatingTextareaDisabled">Nombre y apellido</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" id="floatingTextarea2Disabled" style="height: 100px"></textarea>
-                    <label for="floatingTextarea2Disabled">Consulta</label>
-                  </div>
-                  </div>
+            <div>
+                <form>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="consulta">Consulta</label>
+                        <textarea id="consulta" name="consulta" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

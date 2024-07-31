@@ -5,3 +5,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: "Playfair Display", serif;
+}
+
+//variables, listas y funciones:
+$colores:rgba(235, 235, 211, 0.4), #99582A, #3C3744, #1f1202, #e6e6aa, #ecece1, #EBEBD3, rgb(94, 53, 24),rgb(232, 157, 169);
+
+@mixin borde($radio){
+    border-radius: $radio;
+}
+@mixin flex($display, $just, $align){
+    display: $display;
+    justify-content: $just;
+    align-items: $align;
+}
+//BOOTSTRAP CLASES
+
+.navbar {
+    background-color:rgba(235, 235, 211, 0.0) !important;
+}
+
+.navbar-brand{
+    font-size: 24px !important;
+}
+
+.nav-link{
+    color: #99582A !important;
+    font-size: 25px !important;
+    &:hover{
+        color: #a59797 !important
+    }
+}
+
+
+.form-floating{
+    width: 430px;
+    margin-left: 30px;
+}

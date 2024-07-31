@@ -1,0 +1,382 @@
+.secc1 {
+    width: 100%;
+    background-image: url(../img/img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    h2 {
+        font-size: 80px;
+        color: nth($colores, 3);
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    p {
+        font-size: 32px;
+        margin-top: 100px;
+        color: nth($colores, 4);
+        display: inline-block;
+        font-family: "Kanit", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+}
+
+hr {
+    height: 5px;
+    background-color: nth($colores, 3);
+    margin: 20px;
+    @include borde(10px);
+}
+
+
+.destacados {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+
+    div {
+        @include flex(flex, space-evenly, none);
+        margin-top: 30px;
+
+        img {
+            margin-left: 20px;
+            @include borde(10px);
+            height: 600px;
+            width: 400px;
+        }
+
+        div {
+            @include flex(flex, space-evenly, center);
+            flex-direction: column;
+            text-align: center;
+
+            h3 {
+                font-size: 60px;
+                color: nth($colores, 3);
+            }
+
+            p {
+                font-size: 25px;
+                color: nth($colores, 3);
+                padding: 20px;
+            }
+        }
+    }
+}
+
+.envio {
+    @include flex(flex, space-evenly, none);
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: nth($colores, 5);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include borde(20px);
+    box-shadow: 0px 5px 15px rgba(0.25, 0.25, 0.25, 0.25);
+
+    div {
+        @include flex(flex, space-evenly, center);
+        flex-direction: column;
+        width: 350px;
+        height: 320px;
+
+        img {
+            width: 170px;
+            height: 170px;
+        }
+
+        p {
+            font-size: 24px;
+            font-family: "Kanit", sans-serif;
+            font-weight: 600;
+            font-style: italic;
+            text-align: center;
+        }
+    }
+}
+
+.ubicacion {
+    iframe {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+.conocenos {
+    h2 {
+        font-size: 50px;
+        text-align: center;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .nosotros {
+        @include flex(flex, space-between, none);
+        flex-direction: row;
+
+        div {
+            text-align: center;
+            margin: 15px;
+            background-color: nth($colores, 6);
+            @include borde(20px);
+            padding: 10px;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.13);
+            }
+
+            h3 {
+                font-size: 50px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 600;
+                font-style: italic;
+                color: nth($colores, 2);
+            }
+
+            p {
+                font-size: 25px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                padding-left: 60px;
+                padding-right: 60px;
+            }
+        }
+
+        .linea-vertical {
+            height: 430px;
+            width: 20px;
+            background-color: nth($colores, 3);
+            @include borde(20px);
+            padding: 0;
+        }
+    }
+
+    h3 {
+        font-size: 50px;
+        text-align: center;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+
+.staff {
+    @include flex(flex, space-around, none);
+    flex-direction: row;
+    margin-bottom: 40px;
+
+    .personal {
+        @include flex(flex, space-evenly, flex-start);
+        flex-direction: column;
+        width: 75%;
+        background-color: nth($colores, 5);
+        margin-left: 15px;
+        @include borde(15px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+
+        div {
+            @include flex(flex, none, center);
+            width: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 60px;
+
+            img {
+                height: 150px;
+                width: 150px;
+                border: 3px solid nth($colores, 2);
+                @include borde(100%);
+                margin-top: 20px;
+            }
+
+            div {
+                @include flex(flex, none, flex-start);
+                flex-direction: column;
+                margin-left: 20px;
+
+                h3 {
+                    font-family: "Kanit", sans-serif;
+                    font-weight: 200;
+                    font-style: italic;
+                    margin-bottom: 24px;
+                    font-size: 30px;
+                    color: nth($colores, 3);
+                }
+
+                p {
+                    font-size: 18px;
+                    font-family: "Lora", serif;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.servicios {
+    width: 100%;
+    margin-bottom: 40px;
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        color: nth($colores, 3);
+    }
+
+    .tarjetas {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 400px 400px;
+        row-gap: 40px;
+        margin: auto;
+
+        .tarjeta {
+            height: 400px;
+            width: 250px;
+            display: inline-block;
+            border: 3px solid nth($colores, 3);
+            @include borde(17px);
+            text-align: center;
+            background-color: nth($colores, 5);
+            margin: auto;
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.10);
+            }
+
+            img {
+                height: 300px;
+                width: 100%;
+                @include borde(17px);
+            }
+
+            h3 {
+                font-size: 25px;
+                color: nth($colores, 3);
+                margin-bottom: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                background-color: nth($colores, 2);
+                color: nth($colores, 7);
+                @include borde(6px);
+                padding: 6px;
+
+                &:hover {
+                    color: nth($colores, 5);
+                    background-color: nth($colores, 8);
+                    transition: background-color 0, 5s;
+                }
+            }
+        }
+    }
+}
+
+.contacto{
+    @include flex(flex, space-around, none);
+    width: 90%;
+    height: 500px;
+    background-color: nth($colores, 9);
+    @include borde(20px);
+    margin: auto;
+    margin-bottom: 40px;
+    div {
+        @include flex(flex, space-evenly, center);
+        flex-direction: column;
+        width: 50%;
+
+        h2 {
+            font-size: 70px;
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            color: nth($colores, 7);
+        }
+
+        h3 {
+            a {
+                font-size: 30px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+                color: nth($colores, 7);
+                text-decoration: none;
+
+                &:hover {
+                    color: nth($colores, 3);
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        p {
+            font-size: 35px;
+            text-align: center;
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            color: nth($colores, 7);
+        }
+    }
+
+    form {
+        div {
+            @include flex(flex, space-between, none);
+            flex-direction: row;
+            width: 100%;
+            padding: 10px;
+
+            label {
+                font-size: 20px;
+                font-family: "Kanit", sans-serif;
+                font-weight: 400;
+            }
+
+            input {
+                background-color: nth($colores, 9);
+                border: none;
+                border-bottom: 2px solid nth($colores, 3);
+
+                &:hover {
+                    border-bottom: 2px solid nth($colores, 7);
+                }
+            }
+
+            textarea {
+                background-color: nth($colores, 9);
+                border: 2px solid nth($colores, 3);
+                @include borde(5px);
+                margin-left: 10px;
+
+                &:hover {
+                    border: 2px solid nth($colores, 7);
+                }
+            }
+
+            button {
+                font-family: "Kanit", sans-serif;
+                height: 32px;
+                width: 64px;
+                @include borde(10px);
+                background-color: nth($colores, 9ss);
+                transition: all 1s;
+
+                &:hover {
+                    border: 2px solid nth($colores, 7);
+                    background-color: nth($colores, 9);
+                    scale: (1.2);
+                }
+            }
+        }
+    }
+}

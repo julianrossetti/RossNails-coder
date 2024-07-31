@@ -6,6 +6,25 @@
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: "Playfair Display", serif; }
+
+.navbar {
+  background-color: rgba(235, 235, 211, 0) !important; }
+
+.navbar-brand {
+  font-size: 24px !important; }
+
+.nav-link {
+  color: #99582A !important;
+  font-size: 25px !important; }
+  .nav-link:hover {
+    color: #a59797 !important; }
+
+.form-floating {
+  width: 430px;
+  margin-left: 30px; }
+
 header {
   background-color: rgba(235, 235, 211, 0.4);
   margin: 30px;
@@ -20,6 +39,429 @@ header {
     font-size: 50px;
     padding: 30px; }
   header nav div div div ul li {
-    font-size: 25px;
+    font-size: 25px !important;
     display: inline-block;
     margin: 10px; }
+
+.secc1 {
+  width: 100%;
+  background-image: url(../img/img2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .secc1 h2 {
+    font-size: 80px;
+    color: #3C3744;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic; }
+  .secc1 p {
+    font-size: 32px;
+    margin-top: 100px;
+    color: #1f1202;
+    display: inline-block;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic; }
+
+hr {
+  height: 5px;
+  background-color: #3C3744;
+  margin: 20px;
+  border-radius: 10px; }
+
+.destacados {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 20px; }
+  .destacados div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: none;
+    margin-top: 30px; }
+    .destacados div img {
+      margin-left: 20px;
+      border-radius: 10px;
+      height: 600px;
+      width: 400px; }
+    .destacados div div {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      text-align: center; }
+      .destacados div div h3 {
+        font-size: 60px;
+        color: #3C3744; }
+      .destacados div div p {
+        font-size: 25px;
+        color: #3C3744;
+        padding: 20px; }
+
+.envio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #e6e6aa;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25); }
+  .envio div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 320px; }
+    .envio div img {
+      width: 170px;
+      height: 170px; }
+    .envio div p {
+      font-size: 24px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      text-align: center; }
+
+.ubicacion iframe {
+  width: 100%;
+  height: 400px; }
+
+.conocenos h2 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+.conocenos .nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row; }
+  .conocenos .nosotros div {
+    text-align: center;
+    margin: 15px;
+    background-color: #ecece1;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 1s; }
+    .conocenos .nosotros div:hover {
+      transform: scale(1.13); }
+    .conocenos .nosotros div h3 {
+      font-size: 50px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 600;
+      font-style: italic;
+      color: #99582A; }
+    .conocenos .nosotros div p {
+      font-size: 25px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      padding-left: 60px;
+      padding-right: 60px; }
+  .conocenos .nosotros .linea-vertical {
+    height: 430px;
+    width: 20px;
+    background-color: #3C3744;
+    border-radius: 20px;
+    padding: 0; }
+
+.conocenos h3 {
+  font-size: 50px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
+.staff {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  flex-direction: row;
+  margin-bottom: 40px; }
+  .staff .personal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 75%;
+    background-color: #e6e6aa;
+    margin-left: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25); }
+    .staff .personal div {
+      display: flex;
+      justify-content: none;
+      align-items: center;
+      width: 90%;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 60px; }
+      .staff .personal div img {
+        height: 150px;
+        width: 150px;
+        border: 3px solid #99582A;
+        border-radius: 100%;
+        margin-top: 20px; }
+      .staff .personal div div {
+        display: flex;
+        justify-content: none;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 20px; }
+        .staff .personal div div h3 {
+          font-family: "Kanit", sans-serif;
+          font-weight: 200;
+          font-style: italic;
+          margin-bottom: 24px;
+          font-size: 30px;
+          color: #3C3744; }
+        .staff .personal div div p {
+          font-size: 18px;
+          font-family: "Lora", serif;
+          font-weight: 400; }
+
+.servicios {
+  width: 100%;
+  margin-bottom: 40px; }
+  .servicios h2 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #3C3744; }
+  .servicios .tarjetas {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px 400px;
+    row-gap: 40px;
+    margin: auto; }
+    .servicios .tarjetas .tarjeta {
+      height: 400px;
+      width: 250px;
+      display: inline-block;
+      border: 3px solid #3C3744;
+      border-radius: 17px;
+      text-align: center;
+      background-color: #e6e6aa;
+      margin: auto;
+      transition: all 1s; }
+      .servicios .tarjetas .tarjeta:hover {
+        transform: scale(1.1); }
+      .servicios .tarjetas .tarjeta img {
+        height: 300px;
+        width: 100%;
+        border-radius: 17px; }
+      .servicios .tarjetas .tarjeta h3 {
+        font-size: 25px;
+        color: #3C3744;
+        margin-bottom: 10px; }
+      .servicios .tarjetas .tarjeta a {
+        text-decoration: none;
+        background-color: #99582A;
+        color: #EBEBD3;
+        border-radius: 6px;
+        padding: 6px; }
+        .servicios .tarjetas .tarjeta a:hover {
+          color: #e6e6aa;
+          background-color: #5e3518;
+          transition: background-color 0, 5s; }
+
+.contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: none;
+  width: 90%;
+  height: 500px;
+  background-color: #e89da9;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 40px; }
+  .contacto div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 50%; }
+    .contacto div h2 {
+      font-size: 70px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      color: #EBEBD3; }
+    .contacto div h3 a {
+      font-size: 30px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      color: #EBEBD3;
+      text-decoration: none; }
+      .contacto div h3 a:hover {
+        color: #3C3744;
+        text-decoration: underline; }
+    .contacto div p {
+      font-size: 35px;
+      text-align: center;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      color: #EBEBD3; }
+  .contacto form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: none;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px; }
+    .contacto form div label {
+      font-size: 20px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 400; }
+    .contacto form div input {
+      background-color: #e89da9;
+      border: none;
+      border-bottom: 2px solid #3C3744; }
+      .contacto form div input:hover {
+        border-bottom: 2px solid #EBEBD3; }
+    .contacto form div textarea {
+      background-color: #e89da9;
+      border: 2px solid #3C3744;
+      border-radius: 5px;
+      margin-left: 10px; }
+      .contacto form div textarea:hover {
+        border: 2px solid #EBEBD3; }
+    .contacto form div button {
+      font-family: "Kanit", sans-serif;
+      height: 32px;
+      width: 64px;
+      border-radius: 10px;
+      background-color: #e89da9;
+      transition: all 1s; }
+      .contacto form div button:hover {
+        border: 2px solid #EBEBD3;
+        background-color: #e89da9;
+        scale: 1.2; }
+
+footer {
+  background-color: #EBEBD3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; }
+  footer div h2 {
+    color: #99582A;
+    font-size: 50px; }
+  footer div ul {
+    list-style: none; }
+    footer div ul li {
+      display: inline-block;
+      padding-right: 40px; }
+      footer div ul li a img {
+        width: 35px;
+        height: 35px; }
+
+.fixed {
+  position: fixed;
+  right: 50px;
+  bottom: 100px; }
+
+@media (max-width: 1206px) {
+  .servicios .tarjetas {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 400px 400px 400px; } }
+
+@media (max-width: 1075px) {
+  main .staff {
+    flex-direction: column;
+    align-items: center; }
+  main .conocenos .nosotros {
+    flex-direction: column; }
+    main .conocenos .nosotros .linea-vertical {
+      display: none; } }
+
+@media (max-width: 1028px) {
+  .destacados div div h3 {
+    font-size: 50px; }
+  .destacados div div p {
+    font-size: 22px; } }
+
+@media (max-width: 912px) {
+  .servicios .tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 400px); }
+    .servicios .tarjetas h2 {
+      font-size: 40px; }
+  .contacto {
+    flex-direction: column;
+    width: 80%;
+    height: auto; }
+    .contacto div {
+      width: 100%; } }
+
+@media (max-width: 857px) {
+  .destacados div {
+    flex-direction: column;
+    align-items: center; }
+    .destacados div img {
+      display: none; } }
+
+@media (max-width: 800px) {
+  .secc1 h2 {
+    font-size: 50px; }
+  .secc1 p {
+    font-size: 24px; } }
+
+@media (max-width: 741px) {
+  .staff .personal {
+    width: 85%; }
+    .staff .personal div {
+      margin-left: 10px; }
+      .staff .personal div div p {
+        font-size: 16px; }
+  .contacto div h2 {
+    font-size: 60px; }
+  .contacto div h3 a {
+    font-size: 27px; }
+  .contacto div p {
+    font-size: 24px; } }
+
+@media (max-width: 560px) {
+  .servicios {
+    text-align: center; }
+    .servicios .tarjetas {
+      grid-template-columns: auto;
+      grid-template-rows: repeat(8, 400px); } }
+
+@media (max-width: 496px) {
+  header {
+    background-color: #EBEBD3;
+    margin: 10px; }
+    header h1 {
+      font-size: 35px; }
+  footer div h2 {
+    font-size: 35px; } }
+
+@media (max-width: 462px) {
+  .staff .personal div {
+    flex-direction: column; }
+  .contacto div h2 {
+    font-size: 32px; }
+  .contacto div h3 a {
+    font-size: 20px; }
+  .contacto div p {
+    font-size: 22px; } }
+
+@media (max-width: 428px) {
+  footer div h2 {
+    font-size: 35px; }
+  footer div ul li {
+    padding: 0;
+    margin-left: 6px; } }
+
+@media (max-width: 380px) {
+  header h1 {
+    font-size: 25px; } }
